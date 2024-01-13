@@ -1,0 +1,44 @@
+{% load static %}
+
+<h2 class="ps-1">Technical Gallery</h2>
+<div class="p-2 pt-0 d-flex flex-row flex-wrap justify-content-center" id="technical">
+
+    
+    
+</div>
+
+
+
+<script>
+    const technical = {
+        "External Expert at BMSCE 2022": '{% static "images/Technical/External Expert at BMSCE 2022.jpg" %}',
+        "Interaction with delegates from Japan, 2019": '{% static "images/Technical/Interaction with delegates from Japan, 2019.jpg" %}',
+        "Oragnised talk on DS, 2022": '{% static "images/Technical/Oragnised talk on DS, 2022.jpg" %}',
+        "Organised talk on armed forces, 2022": '{% static "images/Technical/Organised talk on armed forces, 2022.jpg" %}',
+        "Participation in Technical talk on AI & ML, Sept 2022": '{% static "images/Technical/Participation in Technical talk on AI & ML, Sept 2022.jpg" %}',
+        "Proficiency course on CCNA, 10-22 July 2017 underr the banner of RVCE, CISCO academy": '{% static "images/Technical/Proficiency course on CCNA, 10-22 July 2017 underr the banner of RVCE, CISCO academy.jpg" %}',
+        "Proficiency course on CCNA,10-22 July 2017 underr the banner of RVCE, CISCO academy": '{% static "images/Technical/Proficiency course on CCNA,10-22 July 2017 underr the banner of RVCE, CISCO academy.jpg" %}',
+        "Qualnet training, 2022": '{% static "images/Technical/Qualnet training, 2022.jpg" %}',
+        
+        "Technical Talk participation in ISE department": '{% static "images/Technical/Technical Talk participation in ISE department.jpg" %}',
+        "Technical Talk, 2022": '{% static "images/Technical/Technical Talk, 2022.jpg" %}',
+        "With Students and Staff in the cabin": '{% static "images/Technical/With Students and Staff in the cabin.jpg" %}',
+
+    }
+    const technicalContainer = document.getElementById("technical")
+    for (let k in technical){
+        
+        const technicalDiv = document.createElement('div')
+        technicalDiv.classList.add('card')
+        technicalDiv.style.width = "17rem"
+        technicalDiv.style.padding = '0px'
+        technicalDiv.style.margin = "10px"
+        technicalDiv.innerHTML = `
+        <img src="${technical[k]}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">${k}</p>
+  </div>
+        `
+        technicalContainer.appendChild(technicalDiv)
+    }
+</script>

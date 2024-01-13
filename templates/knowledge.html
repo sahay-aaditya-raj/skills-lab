@@ -1,0 +1,154 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% include "navbar.html" %}
+<style>
+    
+    table.table-bordered {
+      border: 2px solid black;
+    }
+    
+    table.table-bordered th, table.table-bordered td {
+      border: 2px solid black;
+    }
+  </style>
+
+
+  <div class="container mt-4">
+    <table class="table table-bordered">
+      <thead>
+          <tr>
+              <th class="py-3 fs-3" colspan="4" style="text-align:center; font-weight:bold;">Subjects Handled at PG Level</th>
+            </tr>
+        <tr>
+          <th>S.No.</th>
+          <th>Subject</th>
+          <th>Program</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td >Computer Networks</td>
+          <td rowspan="10" class="align-middle text-center" >PG-CNE</td>
+          
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Advanced Computer Networks </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Client Server Programing	 </td>
+        </tr><tr>
+          <td>4</td>
+          <td>Distributed Computing</td>
+        </tr><tr>
+          <td>5</td>
+          <td>Design and Principles of Routing and Switching</td>
+        </tr><tr>
+          <td>6</td>
+          <td>Advanced Storage Management	 </td>
+        </tr><tr>
+          <td>7</td>
+          <td>Networks Management	 </td>
+        </tr><tr>
+          <td>8</td>
+          <td>Analysis of Computer Networks	 </td>
+        </tr><tr>
+          <td>9</td>
+          <td>Research Methodology </td>
+        </tr><tr>
+          <td>10</td>
+          <td>High Speed Networks </td>
+        </tr>    
+      </tbody>
+      <thead>
+          <tr>
+              <td>11</td>
+              <td >Operating System</td>
+              <td rowspan="2" class="align-middle text-center">PG-CSE</td>
+              <tr>
+                  <td>12</td>
+                  <td>Advanced Operating System </td>
+                </tr><tr>
+                  <td>13</td>
+                  <td>Data Prepration and Analysis </td>
+                </tr> 
+                </tr>
+          <tr>
+          <td>14</td>
+          <td >Advanced Computer Architecture</td>
+          <td rowspan="4" class="align-middle text-center">PG-CSE-QIP</td>
+          <tr>
+          <td>15</td>
+          <td>Protocol Engineering </td>
+          </tr></tr><tr>
+              <td>16</td>
+              <td>Software Engineering	 </td>
+            </tr><tr>
+              <td>17</td>
+              <td>Multi Core Architecture and Programming	 </td>
+            </tr>
+            <tr>
+              <th class="py-3 fs-3" colspan="4" style="text-align:center; font-weight:bold;">Subjects Handled at UG Level</th>
+            </tr>
+            <tr>
+              <td>18</td>
+              <td >Programming in C</td>
+              <td rowspan="13" class="align-middle text-center">UG-CSE</td>
+              
+            </tr>
+            <tr>
+              <td>19</td>
+              <td>Computer Organization and  Architecture	</td>
+            </tr>
+            <tr>
+              <td>20</td>
+              <td>Digital Logic Design</td>
+            </tr><tr>
+              <td>21</td>
+              <td>Object Oriented Programming in C++	</td>
+            </tr><tr>
+              <td>22</td>
+              <td>Introduction to Microprocessor</td>
+            </tr><tr>
+              <td>23</td>
+              <td>Advanced Microprocessors</td>
+            </tr><tr>
+              <td>24</td>
+              <td>System Software	</td>
+            </tr><tr>
+              <td>25</td>
+              <td>Operating Systems</td>
+            </tr><tr>
+              <td>26</td>
+              <td>Data Communications and Networks</td>
+            </tr><tr>
+              <td>27</td>
+              <td>Distributed Operating System</td>
+            </tr><tr>
+              <td>28</td>
+              <td>Multimedia Communications</td>
+            </tr><tr>
+              <td>29</td>
+              <td>Advanced Computer Architecture</td>
+            </tr><tr>
+              <td>30</td>
+              <td>Cloud Computing</td>
+            </tr>
+  
+              
+            
+        
+      </thead>
+    </table>
+  </div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+{% endblock content %}

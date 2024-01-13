@@ -1,0 +1,42 @@
+{% load static %}
+
+<h2 class="ps-1">Conferences Gallery</h2>
+<div class="p-2 pt-0 d-flex flex-row flex-wrap justify-content-center" id="confrence">
+
+    
+    
+</div>
+
+
+<script>
+    const confrence = {
+        "6th IEEE International Conference on CSITSS, 2022": '{% static "images/Conferences/6th IEEE International Conference on CSITSS, 2022.jpg" %}',
+        "8 ABRSM NATIONAL CONFERENCE": '{% static "images/Conferences/8 ABRSM NATIONAL CONFERENCE.jpg" %}',
+        "Addressing valedictory function of CSITSS, 2016": '{% static "images/Conferences/Addressing valedictory function of CSITSS, 2016.jpg" %}',
+        "General Chair for CSITSS, 2016": '{% static "images/Conferences/General Chair for CSITSS, 2016.jpg" %}',
+        "General Chair for CSITSS,2016": '{% static "images/Conferences/General Chair for CSITSS,2016.jpg" %}',
+        "IEEE 2019 2": '{% static "images/Conferences/IEEE 2019 2.jpg" %}',
+        "IEEE 2019": '{% static "images/Conferences/IEEE 2019.jpg" %}',
+        "IEEE CONNECT 2023": '{% static "images/Conferences/IEEE CONNECT 2023.jpg" %}',
+        "IEEE CS ACTIVITY AT UVCE 2022": '{% static "images/Conferences/IEEE CS ACTIVITY AT UVCE 2022.jpg" %}',
+        "IEEE ICDDS BMSCE 2 DEC 2022": '{% static "images/Conferences/IEEE ICDDS BMSCE 2 DEC 2022.jpg" %}',
+        "Technical Chair at CSITSS, 2022": '{% static "images/Conferences/Technical Chair at CSITSS, 2022.jpg" %}',
+        "Tech Chair at 2nd IEEE International Summit 2017": '{% static "images/Conferences/Tech Chair at 2nd IEEE International Summit 2017.jpg" %}',
+    }
+    const confrenceContainer = document.getElementById("confrence")
+    for (let k in confrence){
+        
+        const confrenceDiv = document.createElement('div')
+        confrenceDiv.classList.add('card')
+        confrenceDiv.style.width = "17rem"
+        confrenceDiv.style.padding = '0px'
+        confrenceDiv.style.margin = "10px"
+        confrenceDiv.innerHTML = `
+        <img src="${confrence[k]}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">${k}</p>
+  </div>
+        `
+        confrenceContainer.appendChild(confrenceDiv)
+    }
+</script>

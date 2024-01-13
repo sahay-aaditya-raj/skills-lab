@@ -1,0 +1,39 @@
+{% load static %}
+
+<h2 class="ps-1">Miscellneous</h2>
+<div class="p-2 pt-0 d-flex flex-row flex-wrap justify-content-center" id="misc">
+
+    
+    
+</div>
+
+
+<script>
+    const misc = {
+        "All Staff members of CSE": '{% static "images/Miscellneous/All Staff members of CSE.jpg" %}',        
+        "College Graduation day during Covid time, 2021": '{% static "images/Miscellneous/College Graduation day during Covid time, 2021.jpg" %}',
+        "Feedback Session from Students": '{% static "images/Miscellneous/Feedback Session from Students.jpg" %}',
+        "Project Evaluation": '{% static "images/Miscellneous/Project Evaluation.jpg" %}',
+        "Utsaraga Marathon, 2022": '{% static "images/Miscellneous/Utsaraga Marathon, 2022.jpg" %}',
+        "With ISTE Office bearers of Karnataka": '{% static "images/Miscellneous/With ISTE Office bearers of Karnataka.jpg" %}',
+        "With PG Students 2022": '{% static "images/Miscellneous/With PG Students 2022.jpg" %}',
+        "With Staff members of department": '{% static "images/Miscellneous/With Staff members of department.jpg" %}',
+
+    }
+    const miscContainer = document.getElementById("misc")
+    for (let k in misc){
+        
+        const miscDiv = document.createElement('div')
+        miscDiv.classList.add('card')
+        miscDiv.style.width = "17rem"
+        miscDiv.style.padding = '0px'
+        miscDiv.style.margin = "10px"
+        miscDiv.innerHTML = `
+        <img src="${misc[k]}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">${k}</p>
+  </div>
+        `
+        miscContainer.appendChild(miscDiv)
+    }
+</script>

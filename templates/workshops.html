@@ -1,0 +1,51 @@
+{% load static %}
+
+<h2 class="ps-1">WorkShop Gallery</h2>
+<div class="p-2 pt-0 d-flex flex-row flex-wrap justify-content-center" id="work">
+
+    
+    
+</div>
+
+
+
+<script>
+    const work = {
+        
+        "A 3 day workshop on advances in Computer Network technologies Routing, Switching, Virtualization and NS2 Simulator. 7th to 9th March ,2013": '{% static "images/WORKSHOPS/A 3 day workshop on advances in Computer Network technologies Routing, Switching, Virtualization and NS2 Simulator. 7th to 9th March ,2013.jpg" %}',
+        "A 3 day workshop on advances in Computer Network technologies Routing, Switching, Virtualization and NS2 Simulator. 7th to 9th March 2013": '{% static "images/WORKSHOPS/A 3 day workshop on advances in Computer Network technologies Routing, Switching, Virtualization and NS2 Simulator. 7th to 9th March 2013.jpg" %}',
+        "BEL Training on Computer Communication Network fundamentals, May 2022": '{% static "images/WORKSHOPS/BEL Training on Computer Communication Network fundamentals, May 2022.jpg" %}',
+        "CCNA Network Fundamentals and Routing Protocols and concepts 21st to 31st July 2015": '{% static "images/WORKSHOPS/CCNA Network Fundamentals and Routing Protocols and concepts 21st to 31st July 2015.jpg" %}',        
+        "CCNA Network Fundamentals and Routing Protocols and concepts 21st to 31st July, 2015": '{% static "images/WORKSHOPS/CCNA Network Fundamentals and Routing Protocols and concepts 21st to 31st July, 2015.jpg" %}',
+        "enhancement of research competence in Networks Simulation 27th to 31st Jan, 2014": '{% static "images/WORKSHOPS/enhancement of research competence in Networks Simulation 27th to 31st Jan, 2014.jpg" %}',
+        "Intel FPGA and SoC workshop 2022": '{% static "images/WORKSHOPS/Intel FPGA and SoC workshop 2022.jpg" %}',
+        "Intel Workshop on FPGA and SoC, 17th and 18th Aug, 2022": '{% static "images/WORKSHOPS/Intel Workshop on FPGA and SoC, 17th and 18th Aug, 2022.jpg" %}',
+        "IoT Workshop on 18th and 19th March, 2022": '{% static "images/WORKSHOPS/IoT Workshop on 18th and 19th March, 2022.jpg" %}',
+        "Nokia Workshop 8th April, 2022": '{% static "images/WORKSHOPS/Nokia Workshop 8th April, 2022.jpg" %}',
+        "Nokia Workshop for PG students, 2019": '{% static "images/WORKSHOPS/Nokia Workshop for PG students, 2019.jpg" %}',
+        "Participation in Intel Workshop, 25th Jan 2023": '{% static "images/WORKSHOPS/Participation in Intel Workshop, 25th Jan 2023.jpg" %}', 
+        "Workshop on AI, 30th March, 2022": '{% static "images/WORKSHOPS/Workshop on AI, 30th March, 2022.jpg" %}',
+        "Workshop on Blockchain, 4th and 5th Aug,2022": '{% static "images/WORKSHOPS/Workshop on Blockchain, 4th and 5th Aug,2022.jpg" %}',
+        "Workshop on Cisco Packet Tracer for PG students, 2019": '{% static "images/WORKSHOPS/Workshop on Cisco Packet Tracer for PG students, 2019.jpg" %}',
+        "Workshop on Machine Learning and Deep Learning Insights, 2019": '{% static "images/WORKSHOPS/Workshop on Machine Learning and Deep Learning Insights, 2019.jpg" %}',       
+
+    
+
+    }
+    const workContainer = document.getElementById("work")
+    for (let k in work){
+        
+        const workDiv = document.createElement('div')
+        workDiv.classList.add('card')
+        workDiv.style.width = "17rem"
+        workDiv.style.padding = '0px'
+        workDiv.style.margin = "10px"
+        workDiv.innerHTML = `
+        <img src="${work[k]}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">${k}</p>
+  </div>
+        `
+        workContainer.appendChild(workDiv)
+    }
+</script>

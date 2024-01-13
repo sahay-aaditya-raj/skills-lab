@@ -1,0 +1,219 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% include "navbar.html" %}
+<style>
+  .table-bordered {
+    border: 2px solid #000;
+  }
+
+  .table-bordered tbody tr {
+    border-bottom: 2px solid #000;
+  }
+
+  .table-bordered th,
+  .table-bordered td {
+    border-right: 2px solid #000;
+  }
+
+  .table-bordered th:last-child,
+  .table-bordered td:last-child {
+    border-right: none;
+  }
+
+    .table-bordered {
+      border: 2px solid #000;
+    }
+  </style>
+
+
+
+  <div class="container mt-5">
+    <h2>Professional Development Activities</h2>
+    <div class="table-responsive">
+
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">S.No</th>
+          <th scope="col">Topic</th>
+          <th scope="col">Organization</th>
+          <th scope="col">Duration / No.of Days</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <th class="py-3" colspan="4" style="text-align:center; font-weight:bold;">i. FDP</th>
+          </tr>
+        <tr>
+          <th scope="row">1</th>
+          <td>Building Enterprise Applications</td>
+          <td>Infosys, Mysore</td>
+          <td>26th July to 30th July 2010 - 6 Days</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Cloud Computing</td>
+          <td>DSCE, B’lore</td>
+          <td>10th Jan to 12th Jan 2011 - 3 Days</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>CCNA-Module-1</td>
+          <td>RVCE-VIT-CISCO</td>
+          <td>24th – 28th May 2011 - 5 Days</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>CCNA-Module-2</td>
+          <td>RVCE-VIT-CISCO</td>
+          <td>20th - 25th June 2011 - 6 Days</td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>FDP on Content Based Video Retrieval</td>
+          <td>RMD Engineering college, Chennai.</td>
+          <td>19/06/2012 to 23/06/2012 - 5 Days</td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>Five-day workshop on “Hands-on Training on Current Computing Tools”</td>
+          <td>SJBIT, B'lore.</td>
+          <td>27/01/2015 to 31/01/2015 - 5 Days</td>
+        </tr>
+        <tr>
+            <th class="py-3" colspan="4" style="text-align:center; font-weight:bold;">ii. Workshop / Seminars</th>
+        </tr>
+        <tr>
+          <th scope="row">7</th>
+          <td>Introduction to Research Methodology</td>
+          <td>RVCE, B'lore</td>
+          <td>18-20th Feb, 2017 - 3 Days</td>
+        </tr>
+        <tr>
+          <th scope="row">8</th>
+          <td>Orientation program on Patents for Faculty and Researchers of Technology Institutions</td>
+          <td>NLSIU, B’lore</td>
+          <td>7th December-2011 - 1 Day</td>
+        </tr>
+        <tr>
+          <th scope="row">9</th>
+          <td>CISCO Academy Conference</td>
+          <td>Anna University, Chennai</td>
+          <td>22nd June-2011 - 1 Day</td>
+        </tr>
+        <tr>
+          <th scope="row">10</th>
+          <td>eLearning and Collaboration Technologies for Quality Learning</td>
+          <td>BMSCE, B’lore</td>
+          <td>17th September-2011 - 1 Day</td>
+        </tr>
+        <tr>
+          <th scope="row">11</th>
+          <td>Faculty day</td>
+          <td>SAP</td>
+          <td>16th Feb-2012 - 1 Day</td>
+        </tr>
+        <tr>
+          <th scope="row">12</th>
+          <td>Java and OOP’s</td>
+          <td>IBM, B'lore</td>
+          <td>13th July 2012 - 15th July 2012 - 3 Days</td>
+        </tr>
+        <tr>
+          <th scope="row">13</th>
+          <td>Monosek Tool Demonstration</td>
+          <td>RVCE, Bangalore</td>
+          <td>07/02/2013 - 1 Day</td>
+        </tr>
+        <tr>
+          <th scope="row">14</th>
+          <td>Workshop on Java</td>
+          <td>RVCE, Bangalore</td>
+          <td>20/04/2013 - 1 Day</td>
+        </tr>
+        <tr>
+          <th scope="row">15</th>
+          <td>Workshop on Quality in Enhancement of Engineering Education through NTPL</td>
+          <td>JSSATE, Bangalore</td>
+          <td>07/06/2013 - 1 Day</td>
+        </tr>
+        <tr>
+          <th scope="row">16</th>
+          <td>Workshop on CISCO Networking Academy Instructor Conference</td>
+          <td>Residency Hotel, Coimbatore</td>
+          <td>23/08/2013 - 1 Day</td>
+        </tr>
+        <tr>
+          <th scope="row">17</th>
+          <td>E-waste Recycling- The Informal Sectors as Pathway to the Future.</td>
+          <td>Crescent Hotel, B'lore</td>
+          <td>3rd September, 2014 - 1 Day</td>
+        </tr>
+        <tr>
+          <th scope="row">18</th>
+          <td>The Future of Corporation Education</td>
+          <td>Matthan Hotel, B'lore</td>
+          <td>5th September, 2014 - 1 Day</td>
+        </tr>
+        <tr>
+          <th scope="row">19</th>
+          <td>IEEE Geoscience and Remote Sensing Society (GRSS)-Advanced Neutral Adaptive Processing in Interferometric and Polar Metric Radar Imaginary.</td>
+          <td>Indian Statistical Institute, B'lore</td>
+          <td>9th December 2014 - 1 Day</td>
+        </tr>
+        <tr>
+          <th scope="row">20</th>
+          <td>SYNOPSYS -University Symposium</td>
+          <td>Hotel ITC B'lore.</td>
+          <td>10th Feb 2015 - 1 Day</td>
+        </tr>
+        <tr>
+          <th scope="row">21</th>
+          <td>IEEE, AGM meeting Bangalore</td>
+          <td>Orchid Resorts, B'lore</td>
+          <td>15 Feb 2015 - 1 Day</td>
+        </tr>
+        <tr>
+          <th scope="row">22</th>
+          <td>Change in Things</td>
+          <td>BMSCE, B'lore</td>
+          <td>4th March 2015 - 1 Day</td>
+        </tr>
+        <tr>
+          <th scope="row">23</th>
+          <td>Retail Marketing</td>
+          <td>Ashoka Hotel, B'lore</td>
+          <td>May 22nd2016 - 1 Day</td>
+        </tr>
+        <tr>
+          <th scope="row">24</th>
+          <td>University Industry collaboration</td>
+          <td>Nokia, B'lore</td>
+          <td>18th August 2016 - 1 Day</td>
+        </tr>
+        <tr>
+          <th scope="row">25</th>
+          <td>Workshop on Intellectual Property Rights (IPR)</td>
+          <td>RVCE, B'lore</td>
+          <td>25th, March, 2017 - 1 Day</td>
+        </tr>
+        <tr>
+          <th scope="row">26</th>
+          <td>Workshop on Power-aware High-Performance Computing</td>
+          <td>CDAC, B'lore</td>
+          <td>4th, May-2017 - 1 Day</td>
+       
+        <tr>
+           
+  
+      </tbody>
+    </table>
+    </div>
+
+  </div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+{% endblock content %}

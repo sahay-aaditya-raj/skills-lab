@@ -1,0 +1,143 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% include "navbar.html" %}
+<style>
+    .mt-5 {
+        margin-top: 3.5rem !important;
+      }
+    li{
+        padding: 0px 20px 0px 20px;
+    }
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    /* Style for the scrollbar handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 6px;
+    }
+
+    /* Optional: Hover styles for the scrollbar handle */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    
+    /* Optional: Style for the scrollbar corner */
+    ::-webkit-scrollbar-corner {
+        background: #f1f1f1;
+    }
+</style>
+
+<header class="bg-primary text-white text-center py-2">
+    <img src="{% static 'profile.jpg' %}" alt="Dr. Nagaraja G.S. - Profile Picture" class="img-fluid rounded-circle" style="max-width: 130px;">
+    <h2 class="my-1">Dr. Nagaraja G.S.</h2>
+    <h3 class="mb-2">Professor and Associate Dean, RV College of Engineering</h3>
+</header>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark ps-2" id="navbar">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link text-white" href="{% url 'publications' %}">Publications</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="{% url 'research' %}">Research</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="{% url 'knowledge' %}">Knowledge Dissemination</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="{% url 'events' %}">Events Attended</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+            
+        </ul>
+    </div>
+</nav>
+
+
+
+<main class="container mt-1" id="main">
+    <article class="bg-white rounded p-2 mb-1">
+        <h2>About</h2>
+        <p>
+            <b>Dr NAGARAJA G.S</b><br>
+            Professor and Associate Dean<br>
+            Dept of Computer Science and Engineering<br>
+            RV College of Engineering (RVCE)<br>
+            Bangalore
+        </p>
+    </article>
+
+    <article class="bg-white rounded p-2 mb-1">
+        <h2>Education</h2>
+        <ul>
+            <li>CCCNA Certified instructor since 2012.</li>
+            <li>Ph.D. in Computer Science and Engineering (2011) from Dr MGR University.</li>
+            <li>M.E. in Engineering Management (1996) and</li>
+            <li>B.E. in Computer Science (1991). </li>
+        </ul>
+    </article>
+
+    
+
+    <article class="bg-white rounded p-2 mb-1">
+        <h2>Resource Person at Confrences and Engineering College
+        </h2>
+        <ul>
+            <li>Keynote speaker for 2nd International Conference, Fuzhou, China</li>
+            <li>Keynote speaker for 2023 3rd International Conference on Machine Learning and Intelligent Systems Engineering (MLISE 2023), China.</li>
+            <li>Chaired many IEEE International Conferences</li>
+            <li>Delivered many technical Talks in FDP, AICTE sponsored Workshops and VTU Engineering Colleges.</li>
+        </ul>
+    </article>
+    
+    <article class="bg-white rounded p-2 mb-1">
+        <h2>Awards / Recognition:</h2>
+        <ul>
+            <li>ISTE presented a National Award "Rajarambapu Patil" for promising engineering teacher for creative work done in technical education 2018.</li>
+            <li>Cisco presented an Advanced Level Instructor Excellence recognition (2013, 2015) for his contributions RVCE-CISCO networking academy, Completed five years of service for RVCE-CISCO academy.</li>
+            <li>Worked as General chair of the IEEE International Conference on Conference on Computational Systems for Information Technology for Sustainable Solution for the year 2016 and technical chair for the years 2017, 2019, 2021 and 2022.</li>
+            <li>Also lead the Conference ICDDS-2022 and AIMLBIO-2022. Also working as Technical chair for IEEE Connect 2023 and ICDDS-2023 Conferences.</li>
+            <li>Presently working as IEEE-CS ExCom member for the year 2023, worked as vice chair of IEEE-CS ExCom for the year 2022 and also worked as exe com Member for the years 2020 and 2021.</li>
+        </ul>
+
+    </article>
+    
+    <article id="contact" class="bg-white rounded p-2 mb-1">
+        <h2>Contact</h2>
+        <div>
+            <div class="d-flex">
+                <b>Address: </b>&nbsp;#2113, 6th Main, Pipeline Road, Kumaraswamy Layout, IInd Stage, Near to BDA Park, Bangalore-560078
+            </div>
+            <a href="https://www.linkedin.com/in/nagaraja-g-s-610887191/" style="color:rgb(50, 92, 159)">LinkedIn</a>
+            <div classs="d-flex">
+                <div class="d-inline">E-mail:</div><a style="color:rgb(50, 92, 159)" href="mailto:nagarajags@rvce.edu.in" class="d-inline px-3" style="cursor: pointer">nagarajags@rvce.edu.in</a>
+            </div>
+            <div classs="d-flex">
+                <div class="d-inline">Mobile Number:</div><div class="d-inline px-3" id="mobile-contact1" title="Click Me To Copy" style="cursor: pointer">9880017459</div>
+            </div>
+            <div classs="d-flex">
+                <div class="d-inline">Office Number:</div><div class="d-inline px-3" id="mobile-contact2" title="Click Me To Copy" style="cursor: pointer">8067188204</div>
+            </div>
+            
+            
+        </div>
+    </article>
+</main>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script type="importmap">
+    {
+      "imports": {
+        "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js",
+        "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.esm.min.js"
+      }
+    }
+    </script>
+<script src="{% static 'home.js' %}"></script>
+
+{% endblock content %}
